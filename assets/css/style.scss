@@ -8,6 +8,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+    all: unset;
+}
+
 ::-webkit-scrollbar:hover {
     display: inline;
 }
@@ -41,6 +45,10 @@
     background: transparent;
 }
 
+// html {
+    //     scroll-behavior: smooth;
+    // }
+
 body {
     display: flex;
 }
@@ -54,6 +62,19 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(77, 55, 55, 0.5)), url("/assets/imgs/147188.png") center no-repeat fixed;
     background-size: cover;
 
+    .nav-visible {
+        opacity: 0;
+        background: transparent;
+    }
+
+    .nav-hidden {
+        height: 50px;
+        line-height: 50px;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.8);
+        // background: linear-gradient(rgb(240, 25, 25), rgba(226, 45, 45, 0));
+    }
+
     nav {
         // display: flex;
         position: fixed;
@@ -62,14 +83,16 @@ body {
         line-height: 40px;
         font-family: 'Be Vietnam', sans-serif;
         color: #fff;
+        opacity: 0;
         transition: all .3s ease-in-out;
-        background: transparent;
+        border-bottom: 2px solid #DB3F3F;
+        // background: transparent;
 
 
         &:hover {
             // background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-            transition: all .3s ease-in-out;
-            background: linear-gradient(rgb(240, 25, 25), rgba(226, 45, 45, 0));
+            // transition: all .3s ease-in-out;
+            // background: linear-gradient(rgb(240, 25, 25), rgba(226, 45, 45, 0));
         }
 
         ul {
@@ -122,16 +145,42 @@ body {
         .showmore {
             display: flex;
             margin-top: 60px;
+            padding: 0 10px 10px 10px;
+            transition: all .3s ease-in-out;
+            // border: 2px solid #00000000;
+            border-bottom: 2px solid#DB3F3F;
+
             // padding-top: 400px;
             // bottom: 0;
+
+            &:hover {
+                cursor: pointer;
+                border-bottom: 3px solid #DB3F3F;
+            }
+
+            &:visited {
+                opacity: 0;
+            }
+
+
 
             p {
                 font-size: 2.2em;
             }
+
+
         }
     }
 
-    iframe {
-        margin: 20% 10vw;
+
+    .sectionTwo {
+        background: #e6e6e6;
+
+        iframe {
+            margin: 20% 10vw;
+        }
     }
+
+
+
 }

@@ -8,6 +8,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  all: unset;
+}
+
 ::-webkit-scrollbar:hover {
   display: inline;
 }
@@ -60,6 +64,18 @@ body {
   background-size: cover;
 }
 
+.container .nav-visible {
+  opacity: 0;
+  background: transparent;
+}
+
+.container .nav-hidden {
+  height: 50px;
+  line-height: 50px;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
+}
+
 .container nav {
   position: fixed;
   width: 100vw;
@@ -67,16 +83,10 @@ body {
   line-height: 40px;
   font-family: 'Be Vietnam', sans-serif;
   color: #fff;
+  opacity: 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  background: transparent;
-}
-
-.container nav:hover {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f01919), to(rgba(226, 45, 45, 0)));
-  background: linear-gradient(#f01919, rgba(226, 45, 45, 0));
+  border-bottom: 2px solid #DB3F3F;
 }
 
 .container nav ul {
@@ -137,13 +147,30 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 60px;
+  padding: 0 10px 10px 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-bottom: 2px solid #DB3F3F;
+}
+
+.container .header .showmore:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #DB3F3F;
+}
+
+.container .header .showmore:visited {
+  opacity: 0;
 }
 
 .container .header .showmore p {
   font-size: 2.2em;
 }
 
-.container iframe {
+.container .sectionTwo {
+  background: #e6e6e6;
+}
+
+.container .sectionTwo iframe {
   margin: 20% 10vw;
 }
 /*# sourceMappingURL=style.css.map */
