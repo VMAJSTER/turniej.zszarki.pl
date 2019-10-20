@@ -61,7 +61,7 @@ showMore.addEventListener('click', function () {
     // sectionTwo.scrollBy(0, -10);;
 
 });
-window.scrollBy(0, -100);
+// window.scrollBy(0, -100);
 
 
 // const id = 'profilePhoto';
