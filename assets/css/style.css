@@ -8,8 +8,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-::--webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar:hover {
+  display: inline;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  opacity: .1;
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+  opacity: .1;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 body {
@@ -27,10 +54,41 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(77, 55, 55, 0.5))), url("https://wallpaperaccess.com/full/147188.png") no-repeat fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(77, 55, 55, 0.5)), url("https://wallpaperaccess.com/full/147188.png") no-repeat fixed;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(77, 55, 55, 0.5))), url("/assets/imgs/147188.png") center no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(77, 55, 55, 0.5)), url("/assets/imgs/147188.png") center no-repeat fixed;
   background-size: cover;
+}
+
+.container nav {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+  line-height: 40px;
+  font-family: 'Be Vietnam', sans-serif;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: transparent;
+}
+
+.container nav:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f01919), to(rgba(226, 45, 45, 0)));
+  background: linear-gradient(#f01919, rgba(226, 45, 45, 0));
+}
+
+.container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container nav ul li {
+  list-style-type: none;
 }
 
 .container .header {
@@ -53,12 +111,36 @@ body {
   color: #fff;
 }
 
-.container .header p:first-child {
+.container .header .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header .txt p:first-child {
   font-size: 4em;
 }
 
-.container .header p:nth-child(2) {
-  font-size: 40px;
+.container .header .txt p:nth-child(2) {
+  font-size: 2em;
+}
+
+.container .header .showmore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+.container .header .showmore p {
+  font-size: 2.2em;
 }
 
 .container iframe {

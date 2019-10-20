@@ -8,11 +8,38 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-::--webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar:hover {
+    display: inline;
 }
 
-::--webkit-scrollbar::hover {}
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    opacity: .1;
+    // border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+    opacity: .1;
+}
+
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
 
 body {
     display: flex;
@@ -22,10 +49,48 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://csgopedia.com/uploads/blog/image049.jpg') no-repeat fixed;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(77, 55, 55, 0.5)), url('https://wallpaperaccess.com/full/147188.png') no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(77, 55, 55, 0.5)), url("/assets/imgs/147188.png") center no-repeat fixed;
     background-size: cover;
+
+    nav {
+        // display: flex;
+        position: fixed;
+        width: 100vw;
+        height: 40px;
+        line-height: 40px;
+        font-family: 'Be Vietnam', sans-serif;
+        color: #fff;
+        transition: all .3s ease-in-out;
+        background: transparent;
+
+
+        &:hover {
+            // background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+            transition: all .3s ease-in-out;
+            background: linear-gradient(rgb(240, 25, 25), rgba(226, 45, 45, 0));
+        }
+
+        ul {
+            display: flex;
+            // flex-direction: row;
+            justify-content: space-around;
+            // display: flex;
+            // flex-direction: column;
+
+            // justify-content: center;
+            // text-decoration: none;
+            // all: unset;
+
+            li {
+                // flex-direction: row;
+                // all: unset;
+                // letter-spacing: 2px;
+                list-style-type: none;
+            }
+        }
+    }
 
     .header {
         display: flex;
@@ -37,12 +102,32 @@ body {
         font-family: 'Be Vietnam', sans-serif;
         color: #fff;
 
-        p:first-child {
-            font-size: 4em;
+        .txt {
+            display: flex;
+            // margin: auto 0;
+
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+
+            p:first-child {
+                font-size: 4em;
+            }
+
+            p:nth-child(2) {
+                font-size: 2em;
+            }
         }
 
-        p:nth-child(2) {
-            font-size: 40px;
+        .showmore {
+            display: flex;
+            margin-top: 60px;
+            // padding-top: 400px;
+            // bottom: 0;
+
+            p {
+                font-size: 2.2em;
+            }
         }
     }
 
