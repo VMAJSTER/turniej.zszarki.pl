@@ -1,4 +1,4 @@
-let scrollPos = 250;
+let scrollPos = 230;
 const nav = document.querySelector('.nav');
 console.log('ustawiłem że po 400 ma być zmiana', nav);
 function checkPosition() {

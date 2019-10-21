@@ -81,10 +81,11 @@ body {
   line-height: 55px;
   opacity: 1;
   border-bottom: 2px solid #DB3F3F;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .container nav {
+  display: none;
   position: fixed;
   width: 100vw;
   height: 40px;
@@ -93,23 +94,29 @@ body {
   color: #fff;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  overflow-y: hidden;
 }
 
 .container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 100vw;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.container nav ul a li {
-  list-style-type: none;
+.container nav ul a {
+  width: 100%;
+  text-align: center;
 }
 
-.container nav ul a li:hover {
+.container nav ul a:hover {
   background: red;
+}
+
+.container nav ul a li {
+  list-style-type: none;
 }
 
 .container .header {

@@ -79,12 +79,12 @@ body {
         line-height: 55px;
         opacity: 1;
         border-bottom: 2px solid #DB3F3F;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.9);
         // background: linear-gradient(rgb(240, 25, 25), rgba(226, 45, 45, 0));
     }
 
     nav {
-        // display: flex;
+        display: none;
         position: fixed;
         width: 100vw;
         height: 40px;
@@ -95,43 +95,28 @@ body {
         transition: all .3s ease-in-out;
         // border-bottom: 2px solid #DB3F3F;
         // background: transparent;
+        overflow-y: hidden;
 
 
-        &:hover {
-            // background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-            // transition: all .3s ease-in-out;
-            // background: linear-gradient(rgb(240, 25, 25), rgba(226, 45, 45, 0));
-        }
+        &:hover {}
 
         ul {
             display: flex;
-            width: 100%;
-            // flex-direction: row;
+            width: 100vw;
             justify-content: space-around;
-            // align-items: stretch;
-            // justify-content: center;
-            // border-left: 1px solid white;
-            // display: flex;
-            // flex-direction: column;
 
-            // justify-content: center;
-            // text-decoration: none;
-            // all: unset;
 
             a {
-                // width: 100%;
-                // border-right: 1px solid white;
+                width: 100%;
+                text-align: center;
+
+                &:hover {
+                    background: red;
+                }
 
                 li {
-                    // width: 100%;
-                    // flex-direction: row;
-                    // all: unset;
-                    // letter-spacing: 2px;
+                    // letter-spacing: 1px;
                     list-style-type: none;
-
-                    &:hover {
-                        background: red;
-                    }
                 }
             }
         }

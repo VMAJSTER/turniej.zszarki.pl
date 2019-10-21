@@ -57,7 +57,7 @@ const showMore = document.querySelector('.showmore');
 console.log(sectionTwo);
 console.log(showMore);
 showMore.addEventListener('click', function () {
-    sectionTwo.scrollIntoView({ top: -100, behavior: 'smooth', block: 'start', inline: 'start' });
+    sectionTwo.scrollIntoView({ top: -150, behavior: 'smooth', block: 'start', inline: 'start' });
     // sectionTwo.scrollBy(0, -10);;
 
 });
