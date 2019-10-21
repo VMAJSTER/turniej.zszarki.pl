@@ -12,6 +12,10 @@ a {
   all: unset;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 ::-webkit-scrollbar:hover {
   display: inline;
 }
@@ -65,14 +69,18 @@ body {
 }
 
 .container .nav-visible {
-  opacity: 0;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  opacity: 1;
   background: transparent;
 }
 
 .container .nav-hidden {
-  height: 50px;
-  line-height: 50px;
+  height: 55px;
+  line-height: 55px;
   opacity: 1;
+  border-bottom: 2px solid #DB3F3F;
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -83,22 +91,25 @@ body {
   line-height: 40px;
   font-family: 'Be Vietnam', sans-serif;
   color: #fff;
-  opacity: 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  border-bottom: 2px solid #DB3F3F;
 }
 
 .container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.container nav ul li {
+.container nav ul a li {
   list-style-type: none;
+}
+
+.container nav ul a li:hover {
+  background: red;
 }
 
 .container .header {
@@ -167,7 +178,9 @@ body {
 }
 
 .container .sectionTwo {
-  background: #e6e6e6;
+  height: 60vh;
+  background: rgba(230, 230, 230, 0.9);
+  border-bottom: 1px solid black;
 }
 
 .container .sectionTwo iframe {
