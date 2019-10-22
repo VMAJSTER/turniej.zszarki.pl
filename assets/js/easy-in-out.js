@@ -52,15 +52,26 @@
 
 
 
-const sectionTwo = document.querySelector('#sectionTwo')
-const showMore = document.querySelector('.showmore');
-console.log(sectionTwo);
-console.log(showMore);
-showMore.addEventListener('click', function () {
-    sectionTwo.scrollIntoView({ top: -150, behavior: 'smooth', block: 'start', inline: 'start' });
-    // sectionTwo.scrollBy(0, -10);;
+// const sectionTwo = document.querySelector('.sectionTwo')
+// const showMore = document.querySelector('.showmore');
+// console.log(sectionTwo);
+// console.log(showMore);
+// showMore.addEventListener('click', function () {
+//     sectionTwo.scrollIntoView({ top: -150, behavior: 'smooth', block: 'start', inline: 'start' });
+//     // sectionTwo.scrollBy(0, -10);;
 
-});
+// });
+
+const moveToGreen = () => {
+    const blue = document.querySelector('.sectionTwo')
+    blue.scrollIntoView({ top: -1500, behavior: 'smooth', block: 'start', inline: 'start' });
+};
+
+const button = document.querySelector('.showmore');
+button.addEventListener('click', moveToGreen);
+
+
+
 // window.scrollBy(0, -100);
 
 
@@ -77,7 +88,7 @@ showMore.addEventListener('click', function () {
 // };
 
 
-const moveToGreen = () => {
-    const blue = document.getElementById('green')
-    blue.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-};
+// const moveToGreen = () => {
+//     const blue = document.getElementById('green')
+//     blue.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+// };
