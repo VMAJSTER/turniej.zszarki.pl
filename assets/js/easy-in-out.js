@@ -61,6 +61,7 @@
 //     // sectionTwo.scrollBy(0, -10);;
 
 // });
+// window.scrollBy(0, -100);
 
 const moveToGreen = () => {
     const blue = document.querySelector('.sectionTwo')
