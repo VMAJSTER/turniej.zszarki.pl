@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
 
+:root {}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +12,6 @@
 
 a {
     all: unset;
-}
-
-a:hover {
-    cursor: pointer;
 }
 
 ::-webkit-scrollbar:hover {
@@ -52,7 +50,6 @@ a:hover {
 // html {
 //     scroll-behavior: smooth;
 // }
-
 body {
     display: flex;
 }
@@ -96,23 +93,34 @@ body {
         // border-bottom: 2px solid #DB3F3F;
         // background: transparent;
         overflow-y: hidden;
+        user-select: none;
 
 
-        &:hover {}
+        &:hover {
+            // display: none;
+        }
 
         ul {
             display: flex;
             width: 100vw;
             justify-content: space-around;
 
+            a:hover {
+
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    cursor: pointer;
+                }
+
+            }
 
             a {
                 width: 100%;
                 text-align: center;
-
-                &:hover {
-                    background: red;
-                }
+                transition: background-color .3s linear;
 
                 li {
                     // letter-spacing: 1px;

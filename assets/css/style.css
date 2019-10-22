@@ -12,10 +12,6 @@ a {
   all: unset;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 ::-webkit-scrollbar:hover {
   display: inline;
 }
@@ -85,7 +81,6 @@ body {
 }
 
 .container nav {
-  display: none;
   position: fixed;
   width: 100vw;
   height: 40px;
@@ -95,6 +90,10 @@ body {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   overflow-y: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container nav ul {
@@ -106,13 +105,15 @@ body {
       justify-content: space-around;
 }
 
+.container nav ul a:hover:nth-child(2), .container nav ul a:hover:nth-child(3), .container nav ul a:hover:nth-child(4), .container nav ul a:hover:nth-child(5), .container nav ul a:hover:nth-child(6) {
+  cursor: pointer;
+}
+
 .container nav ul a {
   width: 100%;
   text-align: center;
-}
-
-.container nav ul a:hover {
-  background: red;
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
 }
 
 .container nav ul a li {
