@@ -127,7 +127,7 @@ ważne że działa
   transition: border .1s ease-in-out;
 }
 
-.container nav ul a:hover:nth-child(2), .container nav ul a:hover:nth-child(3), .container nav ul a:hover:nth-child(4), .container nav ul a:hover:nth-child(5), .container nav ul a:hover:nth-child(6) {
+.container nav ul a:hover:nth-child(1), .container nav ul a:hover:nth-child(2), .container nav ul a:hover:nth-child(3), .container nav ul a:hover:nth-child(4), .container nav ul a:hover:nth-child(5), .container nav ul a:hover:nth-child(6) {
   cursor: pointer;
   z-index: 2;
   border-bottom: 2px solid white;
