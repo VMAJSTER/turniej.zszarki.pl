@@ -56,13 +56,14 @@ body {
     font-family: 'Be Vietnam', sans-serif;
 }
 
+
 .container {
     display: flex;
     flex-direction: column;
     width: 100%;
     // height: 100%;
     // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://csgopedia.com/uploads/blog/image049.jpg') no-repeat fixed;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('../imgs/147188.png') no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('../imgs/147188.png') no-repeat fixed;
     // background: darkcyan;
     background-size: cover;
     color: white;
@@ -203,13 +204,13 @@ body {
         align-items: center;
         height: 60vw;
         // background: rgba(230, 230, 230, 0.9);
-        border: 1px solid black;
+        // border: 1px solid black;
         overflow: hidden;
 
         .content {
             color: white;
             margin: 10% 5%;
-            min-width: 80%;
+            width: 80%;
             // min-height: 80%;
             background: rgba(0, 0, 0, 0.568);
             border-bottom: 2px solid #DB3F3F;
@@ -220,7 +221,7 @@ body {
 
                 .h1 {
                     font-size: 3em;
-                    margin-bottom: 20px;
+                    margin-bottom: 40px;
                 }
 
                 .h2 {
@@ -236,7 +237,7 @@ body {
         justify-content: center;
         // height: 50vw;
         // background: rgba(230, 230, 230, 0.9);
-        border: 1px solid black;
+        // border: 1px solid black;
         overflow: hidden;
 
         .content {
@@ -287,7 +288,7 @@ body {
 
                 .h1 {
                     font-size: 3em;
-                    margin-bottom: 20px;
+                    margin-bottom: 40px;
                 }
 
                 .h2 {
@@ -304,13 +305,13 @@ body {
         align-items: center;
         // height: 60vw;
         // background: rgba(230, 230, 230, 0.9);
-        border: 1px solid black;
+        // border: 1px solid black;
         overflow: hidden;
 
         .content {
             color: white;
-            // margin: 10% 5%;
-            min-width: 80%;
+            margin: 10% 5%;
+            width: 80%;
             // min-height: 80%;
             background: rgba(0, 0, 0, 0.568);
             border-bottom: 2px solid #DB3F3F;
@@ -321,7 +322,7 @@ body {
 
                 .h1 {
                     font-size: 3em;
-                    margin-bottom: 20px;
+                    margin-bottom: 40px;
                 }
 
                 .h2 {
@@ -329,7 +330,62 @@ body {
                 }
 
                 .showCase {
-                    width: 50px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+
+                    a:hover {
+                        cursor: pointer;
+                    }
+
+                    img {
+                        margin-right: 10px;
+                        // max-width: 100%;
+                        // height: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .sectionFifth,
+    .sectionSixth {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // background: rgba(230, 230, 230, 0.9);
+        // border: 1px solid black;
+        overflow: hidden;
+
+        .content {
+            color: white;
+            margin: 10% 5%;
+            width: 80%;
+            // min-height: 80%;
+            background: rgba(0, 0, 0, 0.568);
+            border-bottom: 2px solid #DB3F3F;
+
+            .mixContent {
+                padding: 20px;
+
+                .h1 {
+                    font-size: 3em;
+                    margin-bottom: 40px;
+                }
+
+                .h2 {
+                    font-size: 1em;
+
+                    a {
+                        transition: all .2s ease-in-out;
+                    }
+
+                    a:hover {
+                        color: #DB3F3F;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -343,13 +399,7 @@ body {
         // text-shadow: 0 0 15px#000;
         background: whitesmoke;
 
-        a {
-            color: #DB3F3F;
-        }
 
-        a:hover {
-            cursor: pointer;
-        }
     }
 
 

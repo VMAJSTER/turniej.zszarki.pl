@@ -82,6 +82,12 @@
                         recusandae velit? Voluptatem sit perspiciatis quia? Lorem ipsum dolor, sit amet consectetur
                         adipisicing elit. Voluptatem est necessitatibus repudiandae maiores, error animi dolore minus,
                         sint quia quasi nemo suscipit ex, unde adipisci blanditiis aliquid enim possimus voluptatibus!
+                        Drabinka dostepna tutaj
+                        fb wydarzenia
+                        pizza i picie od sponsorwo
+                        nagrody jakie sa
+                        wiecej w regulaminie
+
                     </p>
                     <!-- <p class="h2">Jak co roku, w naszej szkole jest organizowany turniej e-sportowy. W tym roku za
                         organizację odpowiada Daniel Sumorowski
@@ -109,9 +115,13 @@
                     <div class="days">
                         <div class="dayFirst">
                             <p>Wtorek:</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quaerat numquam
-                                recusandae omnis exercitationem ab non qui fugiat similique. Quisquam a animi explicabo
-                                quaerat dolor veritatis nobis inventore dolores. Velit!</p>
+                            <p>
+                                Start: Godzina 08:00<br>
+                                Planowane zakończenie: 15:00<br>
+
+                                W tym dniu odbywają się eliminacje na żywo. Z 16 drużyn, które będą obecne na miejscu, 4
+                                zwycięskie
+                            </p>
                         </div>
                         <div class="daySecond">
                             <p>Środa:</p>
@@ -121,9 +131,15 @@
                         </div>
                         <div class="dayThird">
                             <p>Czwartek:</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis architecto dicta
-                                pariatur iste odio illo minima necessitatibus, id nobis temporibus consequuntur, impedit
-                                et expedita, exercitationem ullam quasi quis voluptatibus esse?</p>
+                            <p>
+                                Start: Godzina 09:00<br>
+                                Planowane zakończenie: 14:00<br>
+                                <br>
+                                W tym dniu odbędzie się finał, w którym wezmą udział 4 drużyny, wybranie poprzedniego
+                                dnia. W trybie BO3 roztrzygnie się pojedynek o 3 miejsce na podium, natomiast w trybie
+                                BO5 finał
+                                pomiędzy dwona drużynami.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -136,19 +152,72 @@
             <div class="content">
                 <div class="mixContent">
                     <p class="h1">Sponsorzy turnieju:</p>
-                    <div class="showCase">
+                    <!-- <p class="h2">Nagroda główna, ufundowana przez głównego sponsora turnieju - firma DESIRE</p>
+                    <p class="h2">Napoje dla uczestników wydarzenia - firma JURAJSKA</p>
+                    <p class="h2">Pizza dla drużyn w pierwszym dniu - firma CAPRI</p>
+                    <p class="h2">Pizza dla drużyn w drugim dniu - firma FANTAZJA</p>
+                    <p class="h2">Pizza dla drużyn w trzecim dniu - firma REPUBLIKA</p> -->
 
+
+                    <div class="showCase">
+                        <!-- <a href="xxx"><img width="60%" src="assets/imgs/sponsors/desire24.png"></a> -->
+                        <!-- <a href="xxx"><img width="100%" src="assets/imgs/sponsors/sokpol.png"></a> -->
+                        <a href="xxx"><img width="90%" src="assets/imgs/sponsors/capri.png"></a>
+                        <a href="xxx"><img width="90%" src="assets/imgs/sponsors/capri.png"></a>
+                        <a href="xxx"><img width="90%" src="assets/imgs/sponsors/capri.png"></a>
+                        <a href="xxx"><img width="90%" src="assets/imgs/sponsors/capri.png"></a>
                     </div>
+                    <br>
+                    <p style="font-size:2em;margin-bottom:20px;">Ogromnie podziękowania dla:</p>
+
+                    <p class="h2">DESIRE - za dostarczenie sprzętu i ufundowanie nagrody za zajęcie pierwszego i
+                        drugiego miejsce
+                    </p>
+                    <p class="h2">BETEMSOFT - za ufundowanie nagrody za zajęcie drugiego i trzeciego miejsce</p>
+                    <p class="h2">JUREK - za ufundowanie nagrody za zajęcie trzeciego miejsca</p>
+                    <p class="h2">POLIMER - za ufundowanie nagrody za zajęcie trzeciego miejsca</p>
+                    <p class="h2">JURAJSKA - za ufundowanie napojów dla wszystkich uczestników wydarzenia</p>
+                    <p class="h2">REPUBLIKA - za ufundowanie pizzy dla wszystkich zawodników wydarzenia w dniu trzecim
+                    </p>
+                    <p class="h2">FANTAZJA - za ufundowanie pizzy dla wszystkich zawodników wydarzenia w dniu drugim</p>
+                    <p class="h2">CAPRI - za ufundowanie pizzy dla wszystkich zawodników wydarzenia w dniu pierwszym</p>
+                    <p class="h2">MICHAŚ- za ufundowanie przekąsek dla wszystkich uczestników wydarzenia</p>
                 </div>
             </div>
         </section>
 
         <section class="sectionFifth" id="zgloszenia">
+            <div class="content">
+                <div class="mixContent">
+                    <p class="h1">Formularz zgłoszeniowy</p>
+                    <p class="h2">Formularz zostanie dostępniony dnia 4 października 2019 roku.<span
+                            id="countdowntimer"></span></p>
+                    <script>
+                        var timeleft = 10000;
+                        var e = document.getElementById('infoo');
+                        var downloadTimer = setInterval(function () {
+                            timeleft--;
+                            document.getElementById("countdowntimer").textContent = timeleft;
+                            if (timeleft <= 0)
+                                clearInterval(downloadTimer);
+                            //e.setAttribute("style", "display: none;");
+                        }, 1000);
 
+                    </script>
+                </div>
+            </div>
         </section>
 
         <section class="sectionSixth" id="regulamin">
-
+            <div class="content">
+                <div class="mixContent">
+                    <p class="h1">Pliki do pobrania:</p>
+                    <p class="h2"><a href="#">Regulamin Wydarzenia</a></p>
+                    <p class="h2"><a href="#">Informacje dla sponsorów</a></p>
+                    <p class="h2"><a href="#">Oświadczenie (uczniowe niepełnoletni)</a></p>
+                    <p class="h2"><a href="#">Oświadczenie (uczniowe pełnoletni)</a></p>
+                </div>
+            </div>
         </section>
 
         <section class="sectionSeventh" id="stopka">

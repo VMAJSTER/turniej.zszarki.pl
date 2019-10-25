@@ -64,8 +64,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("../imgs/147188.png") no-repeat fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../imgs/147188.png") no-repeat fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url("../imgs/147188.png") no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../imgs/147188.png") no-repeat fixed;
   background-size: cover;
   color: white;
   /*
@@ -214,14 +214,13 @@ ważne że działa
       -ms-flex-align: center;
           align-items: center;
   height: 60vw;
-  border: 1px solid black;
   overflow: hidden;
 }
 
 .container .sectionTwo .content {
   color: white;
   margin: 10% 5%;
-  min-width: 80%;
+  width: 80%;
   background: rgba(0, 0, 0, 0.568);
   border-bottom: 2px solid #DB3F3F;
 }
@@ -232,7 +231,7 @@ ważne że działa
 
 .container .sectionTwo .content .mixContent .h1 {
   font-size: 3em;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .container .sectionTwo .content .mixContent .h2 {
@@ -247,7 +246,6 @@ ważne że działa
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid black;
   overflow: hidden;
 }
 
@@ -296,7 +294,7 @@ ważne że działa
 
 .container .sectionThird .content .mixContent .h1 {
   font-size: 3em;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .container .sectionThird .content .mixContent .h2 {
@@ -313,13 +311,13 @@ ważne że działa
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
   overflow: hidden;
 }
 
 .container .sectionFourth .content {
   color: white;
-  min-width: 80%;
+  margin: 10% 5%;
+  width: 80%;
   background: rgba(0, 0, 0, 0.568);
   border-bottom: 2px solid #DB3F3F;
 }
@@ -330,7 +328,7 @@ ważne że działa
 
 .container .sectionFourth .content .mixContent .h1 {
   font-size: 3em;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .container .sectionFourth .content .mixContent .h2 {
@@ -338,7 +336,71 @@ ważne że działa
 }
 
 .container .sectionFourth .content .mixContent .showCase {
-  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .sectionFourth .content .mixContent .showCase a:hover {
+  cursor: pointer;
+}
+
+.container .sectionFourth .content .mixContent .showCase img {
+  margin-right: 10px;
+}
+
+.container .sectionFifth,
+.container .sectionSixth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container .sectionFifth .content,
+.container .sectionSixth .content {
+  color: white;
+  margin: 10% 5%;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.568);
+  border-bottom: 2px solid #DB3F3F;
+}
+
+.container .sectionFifth .content .mixContent,
+.container .sectionSixth .content .mixContent {
+  padding: 20px;
+}
+
+.container .sectionFifth .content .mixContent .h1,
+.container .sectionSixth .content .mixContent .h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.container .sectionFifth .content .mixContent .h2,
+.container .sectionSixth .content .mixContent .h2 {
+  font-size: 1em;
+}
+
+.container .sectionFifth .content .mixContent .h2 a,
+.container .sectionSixth .content .mixContent .h2 a {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.container .sectionFifth .content .mixContent .h2 a:hover,
+.container .sectionSixth .content .mixContent .h2 a:hover {
+  color: #DB3F3F;
+  cursor: pointer;
 }
 
 .container .sectionSeventh {
@@ -347,13 +409,5 @@ ważne że działa
   line-height: 30px;
   text-align: center;
   background: whitesmoke;
-}
-
-.container .sectionSeventh a {
-  color: #DB3F3F;
-}
-
-.container .sectionSeventh a:hover {
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
