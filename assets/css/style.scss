@@ -47,22 +47,25 @@ a {
     background: transparent;
 }
 
-// html {
-//     scroll-behavior: smooth;
-// }
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
-    //siema
+    font-family: 'Be Vietnam', sans-serif;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://csgopedia.com/uploads/blog/image049.jpg') no-repeat fixed;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(77, 55, 55, 0.5)), url('../imgs/147188.png') no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('../imgs/147188.png') no-repeat fixed;
+    // background: darkcyan;
     background-size: cover;
+    color: white;
 
     .nav-visible {
         height: 40px;
@@ -87,13 +90,12 @@ body {
         width: 100vw;
         height: 40px;
         line-height: 40px;
-        font-family: 'Be Vietnam', sans-serif;
         color: #fff;
         // opacity: 0;
         transition: all .3s ease-in-out;
         // border-bottom: 2px solid #DB3F3F;
         // background: transparent;
-        overflow-y: hidden;
+        // overflow-y: hidden;
         user-select: none;
 
 
@@ -104,24 +106,30 @@ body {
         ul {
             display: flex;
             width: 100vw;
+            height: 100%;
             justify-content: space-around;
 
-            a:hover {
-
-                &:nth-child(2),
-                &:nth-child(3),
-                &:nth-child(4),
-                &:nth-child(5),
-                &:nth-child(6) {
-                    cursor: pointer;
-                }
-
-            }
 
             a {
                 width: 100%;
+                height: 100%;
                 text-align: center;
+                border-bottom: 2px solid rgba(0, 0, 0, 0);
                 transition: background-color .3s linear;
+                transition: border .1s ease-in-out;
+
+                &:hover {
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        cursor: pointer;
+                        z-index: 2;
+                        border-bottom: 2px solid rgb(255, 255, 255);
+                    }
+                }
 
                 li {
                     // letter-spacing: 1px;
@@ -131,74 +139,224 @@ body {
         }
     }
 
-    .header {
+
+    .sectionFirst {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0 auto;
-        font-family: 'Be Vietnam', sans-serif;
-        color: #fff;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
 
-        .txt {
+
+        .header {
             display: flex;
-            // margin: auto 0;
-
             flex-direction: column;
-            // justify-content: center;
+            justify-content: center;
             align-items: center;
+            height: 100vh;
+            margin: 0 auto;
+            color: #fff;
+            text-shadow: 0 0 40px#000;
 
-            p:first-child {
-                font-size: 4em;
+            .txt {
+                display: flex;
+                // margin: auto 0;
+
+                flex-direction: column;
+                // justify-content: center;
+                align-items: center;
+
+                p:first-child {
+                    font-size: 4em;
+                }
+
+                p:nth-child(2) {
+                    font-size: 2em;
+                }
             }
 
-            p:nth-child(2) {
-                font-size: 2em;
+            .showmore {
+                display: flex;
+                margin-top: 60px;
+                padding: 0 10px 10px 10px;
+                transition: all .3s ease-in-out;
+                // border: 2px solid #00000000;
+                border-bottom: 2px solid#DB3F3F;
+
+                // padding-top: 400px;
+                // bottom: 0;
+
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 2px solid rgb(255, 255, 255);
+                }
+
+                p {
+                    font-size: 2.2em;
+                }
             }
-        }
-
-        .showmore {
-            display: flex;
-            margin-top: 60px;
-            padding: 0 10px 10px 10px;
-            transition: all .3s ease-in-out;
-            // border: 2px solid #00000000;
-            border-bottom: 2px solid#DB3F3F;
-
-            // padding-top: 400px;
-            // bottom: 0;
-
-            &:hover {
-                cursor: pointer;
-                border-bottom: 3px solid #DB3F3F;
-            }
-
-            &:visited {
-                opacity: 0;
-            }
-
-
-
-            p {
-                font-size: 2.2em;
-            }
-
-
         }
     }
+
 
 
     .sectionTwo {
-        height: 60vh;
-        background: rgba(230, 230, 230, 0.9);
-        border-bottom: 1px solid black;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        height: 60vw;
+        // background: rgba(230, 230, 230, 0.9);
+        border: 1px solid black;
+        overflow: hidden;
 
-        iframe {
-            margin: 20% 10vw;
+        .content {
+            color: white;
+            margin: 10% 5%;
+            min-width: 80%;
+            // min-height: 80%;
+            background: rgba(0, 0, 0, 0.568);
+            border-bottom: 2px solid #DB3F3F;
+
+            .mixContent {
+                padding: 20px;
+                // margin: 10px;
+
+                .h1 {
+                    font-size: 3em;
+                    margin-bottom: 20px;
+                }
+
+                .h2 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    .sectionThird {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        // height: 50vw;
+        // background: rgba(230, 230, 230, 0.9);
+        border: 1px solid black;
+        overflow: hidden;
+
+        .content {
+            margin: 10% 5%;
+            width: 80%;
+            background: rgba(0, 0, 0, 0.568);
+            // padding: 20px;
+
+            .mixContent {
+                width: 100%;
+                padding: 30px;
+                border-bottom: 2px solid #DB3F3F;
+
+                // margin: 10px;
+                .days {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+
+                    .dayFirst {
+                        p:nth-child(1) {
+                            margin-bottom: 15px;
+                            border-bottom: 2px solid #DB3F3F;
+                            font-size: 2em;
+                        }
+                    }
+
+                    .daySecond {
+                        margin: auto 40px;
+                        // border: 2px solid #DB3F3F;
+
+                        p:nth-child(1) {
+                            margin-bottom: 15px;
+                            font-size: 2em;
+                            border-bottom: 2px solid #DB3F3F;
+                        }
+                    }
+
+                    .dayThird {
+
+                        p:nth-child(1) {
+                            margin-bottom: 15px;
+                            border-bottom: 2px solid #DB3F3F;
+                            font-size: 2em;
+                        }
+                    }
+                }
+
+                .h1 {
+                    font-size: 3em;
+                    margin-bottom: 20px;
+                }
+
+                .h2 {
+                    font-size: 1em;
+                }
+            }
         }
     }
 
 
+    .sectionFourth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // height: 60vw;
+        // background: rgba(230, 230, 230, 0.9);
+        border: 1px solid black;
+        overflow: hidden;
 
+        .content {
+            color: white;
+            // margin: 10% 5%;
+            min-width: 80%;
+            // min-height: 80%;
+            background: rgba(0, 0, 0, 0.568);
+            border-bottom: 2px solid #DB3F3F;
+
+            .mixContent {
+                padding: 20px;
+                // margin: 10px;
+
+                .h1 {
+                    font-size: 3em;
+                    margin-bottom: 20px;
+                }
+
+                .h2 {
+                    font-size: 1em;
+                }
+
+                .showCase {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    .sectionSeventh {
+        color: #000;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        // text-shadow: 0 0 15px#000;
+        background: whitesmoke;
+
+        a {
+            color: #DB3F3F;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+    }
+
+
+    /*
+chopie
+pisałem tą stronkę 4h
+także szybko wsiadaj do taksówy nie ma czasu na optymalizacje
+ważne że działa
+*/
 }
