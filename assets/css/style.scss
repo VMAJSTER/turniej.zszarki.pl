@@ -8,7 +8,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
-@import 'scrollbar/scrollbar';
+@import './scrollbar/scrollbar';
 
 html {
     scroll-behavior: smooth;
@@ -23,7 +23,7 @@ body {
         all: unset;
     }
 
-    @import 'nav/nav';
+    @import './nav/nav.scss';
 
 
 
