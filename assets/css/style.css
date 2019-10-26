@@ -44,6 +44,13 @@ a {
   background: transparent;
 }
 
+@media only screen and (max-width: 1000px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -53,6 +60,73 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Be Vietnam', sans-serif;
+}
+
+body .nav-visible {
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  opacity: 1;
+  background: transparent;
+}
+
+body .nav-hidden {
+  height: 55px;
+  line-height: 55px;
+  opacity: 1;
+  border-bottom: 2px solid #DB3F3F;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+body nav {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  body nav {
+    display: none;
+  }
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body nav ul a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
+  -webkit-transition: border .1s ease-in-out;
+  transition: border .1s ease-in-out;
+}
+
+body nav ul a:hover {
+  cursor: pointer;
+  z-index: 2;
+  border-bottom: 2px solid white;
+}
+
+body nav ul a li {
+  list-style-type: none;
 }
 
 .container {
@@ -76,71 +150,13 @@ ważne że działa
 */
 }
 
-.container .nav-visible {
-  height: 40px;
-  line-height: 40px;
-  border: none;
-  opacity: 1;
-  background: transparent;
-}
-
-.container .nav-hidden {
-  height: 55px;
-  line-height: 55px;
-  opacity: 1;
-  border-bottom: 2px solid #DB3F3F;
-  background: rgba(0, 0, 0, 0.9);
-}
-
-.container nav {
-  position: fixed;
-  width: 100vw;
-  height: 40px;
-  line-height: 40px;
-  color: #fff;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.container nav ul {
+.container section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
-  height: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.container nav ul a {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0);
-  -webkit-transition: background-color .3s linear;
-  transition: background-color .3s linear;
-  -webkit-transition: border .1s ease-in-out;
-  transition: border .1s ease-in-out;
-}
-
-.container nav ul a:hover:nth-child(1), .container nav ul a:hover:nth-child(2), .container nav ul a:hover:nth-child(3), .container nav ul a:hover:nth-child(4), .container nav ul a:hover:nth-child(5), .container nav ul a:hover:nth-child(6) {
-  cursor: pointer;
-  z-index: 2;
-  border-bottom: 2px solid white;
-}
-
-.container nav ul a li {
-  list-style-type: none;
 }
 
 .container .sectionFirst {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1)));
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
 }
@@ -159,6 +175,7 @@ ważne że działa
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   height: 100vh;
   margin: 0 auto;
   color: #fff;
@@ -207,14 +224,12 @@ ważne że działa
 }
 
 .container .sectionTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vw;
-  overflow: hidden;
 }
 
 .container .sectionTwo .content {
@@ -239,9 +254,6 @@ ważne że działa
 }
 
 .container .sectionThird {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -270,10 +282,28 @@ ważne że działa
   width: 100%;
 }
 
+@media only screen and (max-width: 1000px) {
+  .container .sectionThird .content .mixContent .days {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .container .sectionThird .content .mixContent .days .dayFirst,
 .container .sectionThird .content .mixContent .days .daySecond,
 .container .sectionThird .content .mixContent .days .dayThird {
   width: 30%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container .sectionThird .content .mixContent .days .dayFirst,
+  .container .sectionThird .content .mixContent .days .daySecond,
+  .container .sectionThird .content .mixContent .days .dayThird {
+    width: 90%;
+    margin-bottom: 30px;
+  }
 }
 
 .container .sectionThird .content .mixContent .days .dayFirst p:nth-child(1) {
@@ -304,9 +334,6 @@ ważne że działa
 }
 
 .container .sectionFourth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -358,17 +385,12 @@ ważne że działa
 
 .container .sectionFifth,
 .container .sectionSixth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .container .sectionFifth .content,
@@ -415,10 +437,12 @@ ważne że działa
 }
 
 .container .sectionSixth {
-  height: 60vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container .sectionSeventh {
+.container footer {
   color: #000;
   height: 30px;
   line-height: 30px;
