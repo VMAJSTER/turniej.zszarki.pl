@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -8,19 +6,22 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-    all: unset;
-}
 
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
 @import 'scrollbar/scrollbar';
 
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
     display: flex;
     font-family: 'Be Vietnam', sans-serif;
+
+    a {
+        all: unset;
+    }
 
     @import 'nav/nav';
 
@@ -37,9 +38,15 @@ body {
         background-size: cover;
         color: white;
 
-
         section {
             display: flex;
+
+            &>a.link:hover {
+
+                cursor: pointer;
+                color: #DB3F3F;
+
+            }
         }
 
         .sectionFirst {
@@ -341,3 +348,4 @@ także szybko wsiadaj do taksówy nie ma czasu na optymalizacje
 ważne że działa
 */
     }
+}
