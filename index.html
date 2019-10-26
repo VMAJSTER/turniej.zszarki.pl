@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>ZS ŻARKI CUP 2020</title>
 </head>
 
@@ -47,8 +48,7 @@
         <section class="sectionFirst" id="start">
             <div class="header">
                 <div class="txt">
-                    <p class="pheader">ZS ŻARKI CUP 2020
-                        <!--🏆--><i class="fas fa-trophy"></i></p>
+                    <p class="pheader">ZS ŻARKI CUP 2020 🏆<i class="fas fa-trophy"></i></p>
                     <p class="pdownheader">Międzyszkolny turniej w Counter Strike!</p>
                 </div>
 
@@ -69,7 +69,7 @@
         </section>
 
         <section class="sectionTwo" id="informacje">
-            <script src="assets/js/easy-in-out.min.js"></script>
+
             <div class="content">
                 <div class="mixContent">
                     <p class="h1">Informacje o turnieju:</p>
@@ -105,10 +105,9 @@
                         na salę.<br><br>
 
                         Więcej informacji znajduje się w regulaminie wydarzenia, dostępnym poniżej.<br>
-                        <a target="_blank"
+                        <a class="link" target="_blank"
                             href="https://www.facebook.com/Zesp%C3%B3%C5%82-Szk%C3%B3%C5%82-im-T-Ko%C5%9Bciuszki-w-%C5%BBarkach-174099903194058/">Link
                             do wydarzenia na Facebook'u</a>
-                        <a target="_blank" href="#regulamin">Regulamin wydarzenia</a>
 
                     </p>
                     <!-- <p class="h2">Jak co roku, w naszej szkole jest organizowany turniej e-sportowy. W tym roku za
@@ -199,10 +198,23 @@
                     <div class="showCase">
                         <!-- <a href="xxx"><img width="60%" src="assets/imgs/sponsors/desire24.png"></a> -->
                         <!-- <a href="xxx"><img width="100%" src="assets/imgs/sponsors/sokpol.png"></a> -->
-                        <a targer="_blank" href="xxx"><img width="90%" src="assets/imgs/sponsors/capri.png"></a>
-                        <a targer="_blank" href="xxx"><img width="90%" src="assets/imgs/sponsors/capri.png"></a>
-                        <a targer="_blank" href="xxx"><img width="90%" src="assets/imgs/sponsors/capri.png"></a>
-                        <a targer="_blank" href="xxx"><img width="90%" src="assets/imgs/sponsors/capri.png"></a>
+                        <div class="main-carousel" data-flickity=''>
+                            <div class="carousel-cell">
+                                <a targer="_blank" href="xxx">
+                                    <img src="assets/imgs/sponsors/capri.png">
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a targer="_blank" href="xxx">
+                                    <img src="assets/imgs/sponsors/capri.png">
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a targer="_blank" href="xxx">
+                                    <img src="assets/imgs/sponsors/capri.png">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <!-- <br>
                     <p style="font-size:2em;margin-bottom:20px;">Ogromnie podziękowania dla:</p>
@@ -321,6 +333,11 @@
         </section>
 
     </div>
+
+    <script src="assets/js/easy-in-out.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/js/flickity.js"></script>
+
 </body>
 
 </html>

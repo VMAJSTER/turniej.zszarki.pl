@@ -166,13 +166,6 @@ body .container section a:hover {
   color: #DB3F3F;
 }
 
-@media only screen and (max-width: 1000px) {
-  body .container section .content {
-    width: 90%;
-    margin: auto;
-  }
-}
-
 body .container .sectionFirst {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1)));
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
@@ -392,12 +385,24 @@ body .container .sectionFourth .content .mixContent .showCase {
       flex-wrap: wrap;
 }
 
-body .container .sectionFourth .content .mixContent .showCase a:hover {
-  cursor: pointer;
+body .container .sectionFourth .content .mixContent .showCase .main-carousel {
+  width: 66%;
+  height: 100%;
 }
 
-body .container .sectionFourth .content .mixContent .showCase img {
-  margin-right: 10px;
+body .container .sectionFourth .content .mixContent .showCase .main-carousel .carousel-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  min-height: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .container .sectionFifth,

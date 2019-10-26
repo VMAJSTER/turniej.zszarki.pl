@@ -51,13 +51,6 @@ body {
                 color: #DB3F3F;
 
             }
-
-            & .content {
-                @media only screen and (max-width: 1000px) {
-                    width: 90%;
-                    margin: auto;
-                }
-            }
         }
 
         .sectionFirst {
@@ -272,20 +265,33 @@ body {
                         justify-content: space-evenly;
                         flex-wrap: wrap;
 
-                        a:hover {
-                            cursor: pointer;
-                        }
+                        // a:hover {
+                        //     cursor: pointer;
+                        // }
 
-                        img {
-                            margin-right: 10px;
-                            // max-width: 100%;
-                            // height: 50%;
-                        }
+                        // img {
+                        //     margin-right: 10px;
+                        //     // max-width: 100%;
+                        //     // height: 50%;
+                        // }
+
+                        .main-carousel {
+                            width: 66%;
+                            height: 100%;
+                            
+                            .carousel-cell {
+                                display: flex;
+                                width: 100%;
+                                height: 200px;
+                                min-height: 250px;
+                                align-items: center;
+                                justify-content: center;
+                              }
+                          }    
                     }
                 }
             }
         }
-
 
         .sectionFifth,
         .sectionSixth {
