@@ -51,6 +51,13 @@ body {
                 color: #DB3F3F;
 
             }
+
+            & .content {
+                @media only screen and (max-width: 1000px) {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
         }
 
         .sectionFirst {
