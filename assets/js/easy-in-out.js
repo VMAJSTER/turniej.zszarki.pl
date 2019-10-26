@@ -68,8 +68,8 @@ const moveToGreen = () => {
     blue.scrollIntoView({ top: -1500, behavior: 'smooth', block: 'start', inline: 'start' });
 };
 
-// const button = document.querySelector('.showmore');
-// button.addEventListener('click', moveToGreen);
+const button = document.querySelector('.showmore');
+button.addEventListener('click', moveToGreen);
 
 
 
