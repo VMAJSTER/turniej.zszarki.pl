@@ -41,7 +41,11 @@ body {
         section {
             display: flex;
 
-            &>a.link:hover {
+            & a {
+                transition: all .3s ease-in-out;
+            }
+
+            & a:hover {
 
                 cursor: pointer;
                 color: #DB3F3F;
@@ -310,14 +314,14 @@ body {
                     .h2 {
                         font-size: 1em;
 
-                        a {
-                            transition: all .2s ease-in-out;
-                        }
+                        // a {
+                        //     transition: all .2s ease-in-out;
+                        // }
 
-                        a:hover {
-                            color: #DB3F3F;
-                            cursor: pointer;
-                        }
+                        // a:hover {
+                        //     color: #DB3F3F;
+                        //     cursor: pointer;
+                        // }
                     }
                 }
             }
@@ -331,12 +335,13 @@ body {
         }
 
 
-        footer {
+        .footer {
+            display: block;
             color: #000;
             height: 30px;
             line-height: 30px;
             text-align: center;
-            // text-shadow: 0 0 15px#000;
+            text-shadow: 0 0 15px rgb(141, 141, 141);
             background: whitesmoke;
 
         }

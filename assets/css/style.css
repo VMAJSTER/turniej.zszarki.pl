@@ -156,7 +156,12 @@ body .container section {
   display: flex;
 }
 
-body .container section > a.link:hover {
+body .container section a {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+body .container section a:hover {
   cursor: pointer;
   color: #DB3F3F;
 }
@@ -429,29 +434,19 @@ body .container .sectionSixth .content .mixContent .h2 {
   font-size: 1em;
 }
 
-body .container .sectionFifth .content .mixContent .h2 a,
-body .container .sectionSixth .content .mixContent .h2 a {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-
-body .container .sectionFifth .content .mixContent .h2 a:hover,
-body .container .sectionSixth .content .mixContent .h2 a:hover {
-  color: #DB3F3F;
-  cursor: pointer;
-}
-
 body .container .sectionSixth {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-body .container footer {
+body .container .footer {
+  display: block;
   color: #000;
   height: 30px;
   line-height: 30px;
   text-align: center;
+  text-shadow: 0 0 15px #8d8d8d;
   background: whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */
