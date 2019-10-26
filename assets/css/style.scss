@@ -255,11 +255,18 @@ body {
                 // margin: 10px;
                 .days {
                     display: flex;
-                    // justify-content: space-around;
+                    justify-content: space-around;
                     // align-items: baseline;
                     width: 100%;
 
+                    .dayFirst,
+                    .daySecond,
+                    .dayThird {
+                        width: 30%;
+                    }
+
                     .dayFirst {
+
                         p:nth-child(1) {
                             margin-bottom: 15px;
                             border-bottom: 2px solid #DB3F3F;
@@ -268,7 +275,7 @@ body {
                     }
 
                     .daySecond {
-                        margin: auto 40px;
+                        // margin: 40px auto;
                         // border: 2px solid #DB3F3F;
 
                         p:nth-child(1) {
@@ -396,6 +403,10 @@ body {
                 }
             }
         }
+    }
+
+    .sectionSixth {
+        height: 60vh;
     }
 
     .sectionSeventh {

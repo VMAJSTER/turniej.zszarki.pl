@@ -265,17 +265,21 @@ ważne że działa
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
+}
+
+.container .sectionThird .content .mixContent .days .dayFirst,
+.container .sectionThird .content .mixContent .days .daySecond,
+.container .sectionThird .content .mixContent .days .dayThird {
+  width: 30%;
 }
 
 .container .sectionThird .content .mixContent .days .dayFirst p:nth-child(1) {
   margin-bottom: 15px;
   border-bottom: 2px solid #DB3F3F;
   font-size: 2em;
-}
-
-.container .sectionThird .content .mixContent .days .daySecond {
-  margin: auto 40px;
 }
 
 .container .sectionThird .content .mixContent .days .daySecond p:nth-child(1) {
@@ -408,6 +412,10 @@ ważne że działa
 .container .sectionSixth .content .mixContent .h2 a:hover {
   color: #DB3F3F;
   cursor: pointer;
+}
+
+.container .sectionSixth {
+  height: 60vh;
 }
 
 .container .sectionSeventh {
