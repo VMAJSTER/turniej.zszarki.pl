@@ -7,5 +7,4 @@ var flkty = new Flickity(elem, {
   imagesLoaded: false,
   wrapAround: true,
   pageDots: true,
-  prevNextButtons: false,
 });

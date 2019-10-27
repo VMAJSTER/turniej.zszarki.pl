@@ -106,9 +106,10 @@ body nav ul {
   height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  list-style: none;
 }
 
-body nav ul a {
+body nav ul li a {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -119,14 +120,10 @@ body nav ul a {
   transition: border .1s ease-in-out;
 }
 
-body nav ul a:hover {
+body nav ul li a:hover {
   cursor: pointer;
   z-index: 2;
   border-bottom: 2px solid white;
-}
-
-body nav ul a li {
-  list-style-type: none;
 }
 
 body .container {
@@ -330,14 +327,12 @@ body .container .sectionFourth .content .mixContent .showCase {
 }
 
 body .container .sectionFourth .content .mixContent .showCase .main-carousel {
-  width: 66%;
+  width: 100%;
   height: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
-  body .container .sectionFourth .content .mixContent .showCase .main-carousel {
-    width: 100%;
-  }
+body .container .sectionFourth .content .mixContent .showCase .main-carousel .flickity-button {
+  display: none;
 }
 
 body .container .sectionFourth .content .mixContent .showCase .main-carousel .carousel-cell {

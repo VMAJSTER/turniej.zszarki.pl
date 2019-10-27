@@ -32,9 +32,10 @@
             width: 100vw;
             height: 100%;
             justify-content: space-around;
+            list-style: none;
 
             li {
-                list-style-type: none;
+
 
                 a {
                     width: 100%;
@@ -43,6 +44,7 @@
                     border-bottom: 2px solid rgba(0, 0, 0, 0);
                     transition: background-color .3s linear;
                     transition: border .1s ease-in-out;
+                    // list-style-type: none;
 
                     &:hover {
                         cursor: pointer;
