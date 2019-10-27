@@ -59,8 +59,8 @@ body {
                 // border-bottom: 2px solid #DB3F3F;
 
                 @media only screen and (max-width: 1000px) {
-                    width: 90vw;
-                    margin: 0;
+                    width: 100%;
+                    margin: 10% 1%;
                     // padding: 0;
                 }
 
@@ -135,7 +135,6 @@ body {
 
         .sectionThird {
             .content {
-                background: rgba(0, 0, 0, 0.568);
 
                 .mixContent {
 
@@ -155,7 +154,7 @@ body {
                             width: 30%;
 
                             @media only screen and (max-width: 1000px) {
-                                width: 90%;
+                                width: 100%;
                                 margin-bottom: 30px;
                             }
                         }
@@ -196,12 +195,6 @@ body {
 
         .sectionFourth {
             .content {
-                color: white;
-                margin: 10% 5%;
-                width: 80%;
-                // min-height: 80%;
-                background: rgba(0, 0, 0, 0.568);
-                // border-bottom: 2px solid #DB3F3F;
 
                 .mixContent {
                     .showCase {
@@ -209,32 +202,28 @@ body {
                         width: 100%;
                         justify-content: space-evenly;
                         flex-wrap: wrap;
-                        // background: rgb(0, 0, 0);
 
-                        // a:hover {
-                        //     cursor: pointer;
-                        // }
-
-                        // img {
-                        //     margin-right: 10px;
-                        //     // max-width: 100%;
-                        //     // height: 50%;
-                        // }
 
                         .main-carousel {
                             width: 66%;
                             // width: 80%;
                             height: 100%;
 
+                            @media only screen and (max-width: 1000px) {
+                                width: 100%;
+
+                                .flickity-button {
+                                    display: none;
+                                }
+                            }
 
                             .carousel-cell {
                                 display: flex;
                                 width: 100%;
-                                // height: 200px;
+                                height: 200px;
                                 min-height: 250px;
                                 align-items: center;
                                 justify-content: center;
-                                // background: rgba(0, 0, 0, 0.459);
                             }
                         }
                     }
@@ -245,25 +234,8 @@ body {
 
         .sectionFifth,
         .sectionSixth {
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // height: 100vh;
-            // background: rgba(230, 230, 230, 0.9);
-            // border: 1px solid black;
-            // overflow: hidden;
-
             .content {
-                color: white;
-                margin: 10% 5%;
-                width: 80%;
-                // min-height: 80%;
-                // background: rgba(0, 0, 0, 0.568);
-                // border-bottom: 2px solid #DB3F3F;
-
                 .mixContent {
-                    // padding: 20px;
-
                     iframe {
                         width: 100%;
                         height: 50vw;
@@ -272,14 +244,6 @@ body {
                 }
             }
         }
-
-        .sectionSixth {
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // height: 90vh;
-        }
-
 
         .footer {
             display: block;

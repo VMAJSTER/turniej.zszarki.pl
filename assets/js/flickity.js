@@ -1,10 +1,10 @@
 var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
+var flkty = new Flickity(elem, {
 
   cellAlign: 'left',
   contain: true,
-  autoPlay: 4000,
+  autoPlay: 2000,
   imagesLoaded: false,
-  wrapAround: true,
-  pageDots: false
+  wrapAround: false,
+  pageDots: false,
 });

@@ -180,8 +180,8 @@ body .container section .content {
 
 @media only screen and (max-width: 1000px) {
   body .container section .content {
-    width: 90vw;
-    margin: 0;
+    width: 100%;
+    margin: 10% 1%;
   }
 }
 
@@ -266,10 +266,6 @@ body .container .sectionFirst .header .showmore p {
   font-size: 2.2em;
 }
 
-body .container .sectionThird .content {
-  background: rgba(0, 0, 0, 0.568);
-}
-
 body .container .sectionThird .content .mixContent .days {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +294,7 @@ body .container .sectionThird .content .mixContent .days .dayThird {
   body .container .sectionThird .content .mixContent .days .dayFirst,
   body .container .sectionThird .content .mixContent .days .daySecond,
   body .container .sectionThird .content .mixContent .days .dayThird {
-    width: 90%;
+    width: 100%;
     margin-bottom: 30px;
   }
 }
@@ -321,13 +317,6 @@ body .container .sectionThird .content .mixContent .days .dayThird p:nth-child(1
   font-size: 2em;
 }
 
-body .container .sectionFourth .content {
-  color: white;
-  margin: 10% 5%;
-  width: 80%;
-  background: rgba(0, 0, 0, 0.568);
-}
-
 body .container .sectionFourth .content .mixContent .showCase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,11 +334,21 @@ body .container .sectionFourth .content .mixContent .showCase .main-carousel {
   height: 100%;
 }
 
+@media only screen and (max-width: 1000px) {
+  body .container .sectionFourth .content .mixContent .showCase .main-carousel {
+    width: 100%;
+  }
+  body .container .sectionFourth .content .mixContent .showCase .main-carousel .flickity-button {
+    display: none;
+  }
+}
+
 body .container .sectionFourth .content .mixContent .showCase .main-carousel .carousel-cell {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 200px;
   min-height: 250px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -357,13 +356,6 @@ body .container .sectionFourth .content .mixContent .showCase .main-carousel .ca
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-body .container .sectionFifth .content,
-body .container .sectionSixth .content {
-  color: white;
-  margin: 10% 5%;
-  width: 80%;
 }
 
 body .container .sectionFifth .content .mixContent iframe,
