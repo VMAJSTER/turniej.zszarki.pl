@@ -33,23 +33,23 @@
             height: 100%;
             justify-content: space-around;
 
+            li {
+                list-style-type: none;
 
-            a {
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                border-bottom: 2px solid rgba(0, 0, 0, 0);
-                transition: background-color .3s linear;
-                transition: border .1s ease-in-out;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    border-bottom: 2px solid rgba(0, 0, 0, 0);
+                    transition: background-color .3s linear;
+                    transition: border .1s ease-in-out;
 
-                &:hover {
-                    cursor: pointer;
-                    z-index: 2;
-                    border-bottom: 2px solid rgb(255, 255, 255);
-                }
+                    &:hover {
+                        cursor: pointer;
+                        z-index: 2;
+                        border-bottom: 2px solid rgb(255, 255, 255);
+                    }
 
-                li {
-                    list-style-type: none;
                 }
             }
         }

@@ -338,9 +338,6 @@ body .container .sectionFourth .content .mixContent .showCase .main-carousel {
   body .container .sectionFourth .content .mixContent .showCase .main-carousel {
     width: 100%;
   }
-  body .container .sectionFourth .content .mixContent .showCase .main-carousel .flickity-button {
-    display: none;
-  }
 }
 
 body .container .sectionFourth .content .mixContent .showCase .main-carousel .carousel-cell {
