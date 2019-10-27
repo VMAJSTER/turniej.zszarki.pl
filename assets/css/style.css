@@ -392,12 +392,23 @@ body .container .sectionFourth .content .mixContent .showCase {
       flex-wrap: wrap;
 }
 
-body .container .sectionFourth .content .mixContent .showCase a:hover {
-  cursor: pointer;
+body .container .sectionFourth .content .mixContent .showCase .main-carousel {
+  width: 66%;
+  height: 100%;
 }
 
-body .container .sectionFourth .content .mixContent .showCase img {
-  margin-right: 10px;
+body .container .sectionFourth .content .mixContent .showCase .main-carousel .carousel-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .container .sectionFifth,
