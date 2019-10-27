@@ -271,6 +271,7 @@ body {
                         display: flex;
                         justify-content: space-evenly;
                         flex-wrap: wrap;
+                        // background: rgb(0, 0, 0);
 
                         // a:hover {
                         //     cursor: pointer;
@@ -287,6 +288,7 @@ body {
                             // width: 80%;
                             height: 100%;
 
+
                             .carousel-cell {
                                 display: flex;
                                 width: 100%;
@@ -294,6 +296,7 @@ body {
                                 min-height: 250px;
                                 align-items: center;
                                 justify-content: center;
+                                // background: rgba(0, 0, 0, 0.459);
                             }
                         }
                     }
