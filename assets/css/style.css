@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar:hover {
+  display: inline;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  opacity: .1;
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+  opacity: .1;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+body a {
+  all: unset;
+}
+
+body .nav-visible {
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  opacity: 1;
+  background: transparent;
+}
+
+body .nav-hidden {
+  height: 55px;
+  line-height: 55px;
+  opacity: 1;
+  border-bottom: 2px solid #DB3F3F;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+body nav {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  body nav {
+    display: none;
+  }
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+body nav ul a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
+  -webkit-transition: border .1s ease-in-out;
+  transition: border .1s ease-in-out;
+}
+
+body nav ul a:hover {
+  cursor: pointer;
+  z-index: 2;
+  border-bottom: 2px solid white;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.55))), url("../imgs/147188.png") no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.55)), url("../imgs/147188.png") no-repeat fixed;
+  background-size: cover;
+  color: white;
+  /*
+chopie
+pisałem tą stronkę 4h
+także szybko wsiadaj do taksówy nie ma czasu na optymalizacje
+ważne że działa
+*/
+}
+
+body .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container section a {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+body .container section a:hover {
+  cursor: pointer;
+  color: #DB3F3F;
+}
+
+body .container section .content {
+  width: 80%;
+  margin: 10% 5%;
+  background: rgba(0, 0, 0, 0.568);
+}
+
+@media only screen and (max-width: 1000px) {
+  body .container section .content {
+    width: 100%;
+    margin: 10% 1%;
+  }
+}
+
+body .container section .content .mixContent {
+  padding: 20px;
+  border-bottom: 2px solid #DB3F3F;
+}
+
+body .container section .content .mixContent .h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+body .container section .content .mixContent .h2 {
+  font-size: 1em;
+}
+
+body .container .sectionFirst {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+}
+
+body .container .sectionFirst .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0 auto;
+  color: #fff;
+  text-shadow: 0 0 40px #000;
+}
+
+body .container .sectionFirst .header .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .sectionFirst .header .txt p:first-child {
+  font-size: 4em;
+}
+
+body .container .sectionFirst .header .txt p:nth-child(2) {
+  font-size: 2em;
+}
+
+body .container .sectionFirst .header .showmore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  padding: 0 10px 10px 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-bottom: 2px solid #DB3F3F;
+}
+
+body .container .sectionFirst .header .showmore:hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+
+body .container .sectionFirst .header .showmore p {
+  font-size: 2.2em;
+}
+
+body .container .sectionThird .content .mixContent .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  body .container .sectionThird .content .mixContent .days {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .container .sectionThird .content .mixContent .days .dayFirst,
+body .container .sectionThird .content .mixContent .days .daySecond,
+body .container .sectionThird .content .mixContent .days .dayThird {
+  width: 30%;
+}
+
+@media only screen and (max-width: 1000px) {
+  body .container .sectionThird .content .mixContent .days .dayFirst,
+  body .container .sectionThird .content .mixContent .days .daySecond,
+  body .container .sectionThird .content .mixContent .days .dayThird {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+body .container .sectionThird .content .mixContent .days .dayFirst p:nth-child(1) {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #DB3F3F;
+  font-size: 2em;
+}
+
+body .container .sectionThird .content .mixContent .days .daySecond p:nth-child(1) {
+  margin-bottom: 15px;
+  font-size: 2em;
+  border-bottom: 2px solid #DB3F3F;
+}
+
+body .container .sectionThird .content .mixContent .days .dayThird p:nth-child(1) {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #DB3F3F;
+  font-size: 2em;
+}
+
+body .container .sectionFourth .content .mixContent .showCase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .sectionFourth .content .mixContent .showCase .main-carousel {
+  width: 100%;
+  height: 100%;
+}
+
+body .container .sectionFourth .content .mixContent .showCase .main-carousel .flickity-button {
+  display: none;
+}
+
+body .container .sectionFourth .content .mixContent .showCase .main-carousel .carousel-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  min-height: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .sectionFifth .content .mixContent iframe,
+body .container .sectionSixth .content .mixContent iframe {
+  width: 100%;
+  height: 50vw;
+}
+
+body .container .footer {
+  display: block;
+  color: #000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 0 15px #8d8d8d;
+  background: whitesmoke;
+}
+/*# sourceMappingURL=style.css.map */

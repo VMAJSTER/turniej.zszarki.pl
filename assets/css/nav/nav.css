@@ -1,0 +1,64 @@
+.nav-visible {
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  opacity: 1;
+  background: transparent;
+}
+
+.nav-hidden {
+  height: 55px;
+  line-height: 55px;
+  opacity: 1;
+  border-bottom: 2px solid #DB3F3F;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+nav ul a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
+  -webkit-transition: border .1s ease-in-out;
+  transition: border .1s ease-in-out;
+}
+
+nav ul a:hover {
+  cursor: pointer;
+  z-index: 2;
+  border-bottom: 2px solid white;
+}
+/*# sourceMappingURL=nav.css.map */
