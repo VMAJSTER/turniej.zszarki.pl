@@ -205,16 +205,12 @@ body {
 
 
                         .main-carousel {
-                            width: 66%;
+                            width: 100%;
                             // width: 80%;
                             height: 100%;
 
-                            @media only screen and (max-width: 1000px) {
-                                width: 100%;
-
-                                .flickity-button {
-                                    display: none;
-                                }
+                            .flickity-button {
+                                display: none;
                             }
 
                             .carousel-cell {
