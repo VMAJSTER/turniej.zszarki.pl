@@ -243,6 +243,12 @@ body .container .sectionFirst .header .txt p:nth-child(2) {
   font-size: 2em;
 }
 
+body .container .sectionFirst .header .txt p:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 1em;
+}
+
 body .container .sectionFirst .header .showmore {
   display: -webkit-box;
   display: -ms-flexbox;
