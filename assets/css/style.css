@@ -235,7 +235,7 @@ body .container .sectionFirst .header .txt {
           align-items: center;
 }
 
-body .container .sectionFirst .header .txt p:first-child {
+body .container .sectionFirst .header .txt p:nth-child(1) {
   font-size: 4em;
 }
 
@@ -246,6 +246,7 @@ body .container .sectionFirst .header .txt p:nth-child(2) {
 body .container .sectionFirst .header .txt p:nth-child(3) {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  font-style: oblique;
   font-size: 1em;
 }
 
