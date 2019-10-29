@@ -162,6 +162,7 @@ body .container section {
 body .container section a {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  font-weight: bold;
 }
 
 body .container section a:hover {
@@ -179,6 +180,7 @@ body .container section .content {
   body .container section .content {
     width: 100%;
     margin: 10% 1%;
+    overflow-wrap: word-break;
   }
 }
 
@@ -187,12 +189,20 @@ body .container section .content .mixContent {
   border-bottom: 2px solid #DB3F3F;
 }
 
-body .container section .content .mixContent .h1 {
-  font-size: 3em;
+body .container section .content .mixContent p.h1 {
+  font-size: 3.5em;
   margin-bottom: 40px;
 }
 
-body .container section .content .mixContent .h2 {
+body .container section .content .mixContent p.h2 {
+  font-size: 3em;
+}
+
+body .container section .content .mixContent p.h3 {
+  font-size: 2em;
+}
+
+body .container section .content .mixContent p.h4 {
   font-size: 1em;
 }
 
@@ -244,10 +254,21 @@ body .container .sectionFirst .header .txt p:nth-child(2) {
 }
 
 body .container .sectionFirst .header .txt p:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-style: oblique;
   font-size: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+  body .container .sectionFirst .header .txt p:nth-child(3) {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 body .container .sectionFirst .header .showmore {

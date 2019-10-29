@@ -43,6 +43,7 @@ body {
 
             & a {
                 transition: all .3s ease-in-out;
+                font-weight: bold;
             }
 
             & a:hover {
@@ -61,6 +62,7 @@ body {
                 @media only screen and (max-width: 1000px) {
                     width: 100%;
                     margin: 10% 1%;
+                    overflow-wrap: word-break;
                     // padding: 0;
                 }
 
@@ -68,13 +70,21 @@ body {
                     padding: 20px;
                     border-bottom: 2px solid #DB3F3F;
 
-                    .h1 {
-                        font-size: 3em;
+                    p.h1 {
+                        font-size: 3.5em;
                         margin-bottom: 40px;
                     }
 
-                    .h2 {
-                        font-size: 1em;
+                    p.h2 {
+                        font-size: 3em;
+                    }
+
+                    p.h3 {
+                        font-size: 2em
+                    }
+
+                    p.h4 {
+                        font-size: 1em
                     }
                 }
             }
@@ -108,9 +118,14 @@ body {
                     }
 
                     p:nth-child(3) {
+                        display: flex;
                         align-self: flex-end;
                         font-style: oblique;
                         font-size: 1em;
+
+                        @media only screen and (max-width: 1000px) {
+                            align-self: center;
+                        }
                     }
                 }
 
@@ -138,7 +153,6 @@ body {
 
                 .mixContent {
 
-                    .mainSponsor {}
 
                     .days {
                         display: flex;
@@ -196,6 +210,8 @@ body {
 
         .sectionFourth {
             .content {
+
+                .mainSponsor {}
 
                 .mixContent {
                     .showCase {
