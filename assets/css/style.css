@@ -90,6 +90,7 @@ body nav {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: 999;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -204,6 +205,15 @@ body .container section .content .mixContent p.h3 {
 
 body .container section .content .mixContent p.h4 {
   font-size: 1em;
+}
+
+body .container section .content .mixContent p.italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+body .container section .content .mixContent .bold {
+  font-weight: 900;
 }
 
 body .container .sectionFirst {
@@ -340,6 +350,43 @@ body .container .sectionThird .content .mixContent .days .dayThird p:nth-child(1
   margin-bottom: 15px;
   border-bottom: 2px solid #DB3F3F;
   font-size: 2em;
+}
+
+body .container .sectionFourth .content .mainSponsor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10%;
+}
+
+body .container .sectionFourth .content .mainSponsor .left {
+  width: 50%;
+}
+
+body .container .sectionFourth .content .mainSponsor .left p:nth-child(3) {
+  margin: 10px 0;
+}
+
+body .container .sectionFourth .content .mainSponsor .right {
+  width: 40%;
+}
+
+body .container .sectionFourth .content .mainSponsor .right a {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+body .container .sectionFourth .content .mainSponsor .right a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 body .container .sectionFourth .content .mixContent .showCase {
