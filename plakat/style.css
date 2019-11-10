@@ -18,7 +18,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Be Vietnam', sans-serif;
-  height: 100vh;
   overflow: hidden;
 }
 
