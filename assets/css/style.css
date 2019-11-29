@@ -407,6 +407,7 @@ body .container .sectionFourth .content .mainSponsor .right a:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
+    width: auto;
   }
 }
 

@@ -254,6 +254,7 @@ body {
                     @media only screen and (max-width: 1000px) {
                         width: 100%;
                         flex-direction: column-reverse;
+                        // align-items: auto;
 
                         .left {
                             width: 100%;
@@ -263,7 +264,7 @@ body {
                         .right {
                             justify-content: center;
                             margin-bottom: 30px;
-                            // width: auto;
+                            width: auto;
                         }
 
 
