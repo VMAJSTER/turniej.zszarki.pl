@@ -145,6 +145,7 @@ chopie
 pisałem tą stronkę 4h
 także szybko wsiadaj do taksówy nie ma czasu na optymalizacje
 ważne że działa
+nie szukaj błędów
 */
 }
 
@@ -387,6 +388,26 @@ body .container .sectionFourth .content .mainSponsor .right a {
 body .container .sectionFourth .content .mainSponsor .right a:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+@media only screen and (max-width: 1000px) {
+  body .container .sectionFourth .content .mainSponsor {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body .container .sectionFourth .content .mainSponsor .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  body .container .sectionFourth .content .mainSponsor .right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 body .container .sectionFourth .content .mixContent .showCase {

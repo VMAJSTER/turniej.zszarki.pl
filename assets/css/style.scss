@@ -228,7 +228,6 @@ body {
                     // flex-direction: row;
                     margin-bottom: 10%;
 
-
                     .left {
                         width: 50%;
 
@@ -251,6 +250,25 @@ body {
                             // zoom: 1.1;
                         }
                     }
+
+                    @media only screen and (max-width: 1000px) {
+                        width: 100%;
+                        flex-direction: column-reverse;
+
+                        .left {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+
+                        .right {
+                            justify-content: center;
+                            margin-bottom: 30px;
+                            // width: auto;
+                        }
+
+
+                    }
+
                 }
 
 
@@ -316,6 +334,7 @@ chopie
 pisałem tą stronkę 4h
 także szybko wsiadaj do taksówy nie ma czasu na optymalizacje
 ważne że działa
+nie szukaj błędów
 */
     }
 }
