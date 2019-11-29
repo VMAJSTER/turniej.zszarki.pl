@@ -315,6 +315,11 @@ body {
                         height: 50vw;
                     }
 
+                    @media only screen and (max-width: 1000px) {
+                        iframe {
+                            height: 90vh;
+                        }
+                    }
                 }
             }
         }

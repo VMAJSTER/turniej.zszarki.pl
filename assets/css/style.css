@@ -453,6 +453,13 @@ body .container .sectionSixth .content .mixContent iframe {
   height: 50vw;
 }
 
+@media only screen and (max-width: 1000px) {
+  body .container .sectionFifth .content .mixContent iframe,
+  body .container .sectionSixth .content .mixContent iframe {
+    height: 90vh;
+  }
+}
+
 body .container .footer {
   display: block;
   color: #000;
