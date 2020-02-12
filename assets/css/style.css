@@ -375,6 +375,7 @@ body .container .sectionFourth .content .mainSponsor .left p:nth-child(3) {
 }
 
 body .container .sectionFourth .content .mainSponsor .right {
+  text-align: center;
   width: 40%;
 }
 
